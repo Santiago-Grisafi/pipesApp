@@ -1,0 +1,77 @@
+<div class="text-layout text-center mt-3">
+    <h2>Pipes of Numbers:</h2>
+</div>
+<div class="row mt-3">
+    <div class="col text-center">
+        <p-card [header]="'number' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{argentinaPopulation}}</td>
+                        <td>{{argentinaPopulation | number}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col text-center">
+        <p-card [header]="'decimalPipe' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{argentinaPopulation}}</td>
+                        <td>{{argentinaPopulation | number:"1.1-1"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col text-center">
+        <p-card [header]="'currency' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{argentinaPopulation}}</td>
+                        <td>{{argentinaPopulation | currency:"USD":"symbol-narrow"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col text-center">
+        <p-card [header]="'percent' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{test}}</td>
+                        <td>{{test | percent:"1.1-1"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+</div>

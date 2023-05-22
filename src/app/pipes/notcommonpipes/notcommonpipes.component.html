@@ -1,0 +1,38 @@
+<div class="text-layout text-center mt-3">
+    <h2>Pipes Not Commons:</h2>
+</div>
+<div class="row mt3 text-center">
+    <div class="col p-md-6">
+        <p-card [header]="title | titlecase">
+            Welcome {{genre | i18nSelect:genreInfo}} my old friend
+            <hr>
+            <button class="btn btn-danger text-white" (click)="changeSex()">Change Genre</button>
+        </p-card>
+    </div>
+    <div class="col p-md-6">
+        <p-card [header]="title2 | titlecase">
+            {{clients.length | i18nPlural: clientsMap}}
+            <hr>
+            <button class="btn btn-danger" (click)="deleteClient()">Delete Client</button>
+        </p-card>
+    </div>
+    <div class="col p-md-6">
+        <p-card [header]="'key value' | titlecase">
+            <ol>
+                <li *ngFor="let item of person | keyvalue">{{item.key | titlecase}}</li>
+            </ol>
+        </p-card>
+    </div>
+    <div class="col p-md-6">
+        <p-card [header]="'async' | titlecase">
+            <h6>Bomba de Tiempo:</h6>
+            <pre>{{miObserv | async}} Segundos</pre>
+        </p-card>
+    </div>
+    <div class="col p-md-6">
+        <p-card [header]="'asyncII' | titlecase">
+            <h6>Promise:</h6>
+            <pre *ngIf="!(promise() | async)">{{promise() | async}} Resolve Promise</pre>
+        </p-card>
+    </div>
+</div>

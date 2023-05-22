@@ -1,0 +1,77 @@
+<div class="text-layout text-center mt-3">
+    <h2>Pipes of Words:</h2>
+</div>
+<div class="row text-center">
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'titlecase' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{actressName}}</td>
+                        <td>{{actressName | titlecase}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'lowercase' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{actressName}}</td>
+                        <td>{{actressName | lowercase}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'uppercase' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{actressName}}</td>
+                        <td>{{actressName | titlecase}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'slice with 0 to 7' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{actressName}}</td>
+                        <td>{{actressName | slice:0:7}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+</div>

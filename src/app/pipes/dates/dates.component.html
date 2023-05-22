@@ -1,0 +1,131 @@
+<div class="text-layout text-center mt-3">
+    <h2>Pipes of Date:</h2>
+</div>
+<div class="row mt-2 text-center">
+    <div class="col-lg-4 col-sm-12 mb-3 text-center">
+        <p-card [header]="'date' | titlecase">
+            <table class="table dark-table bg-dark text-white pb-3">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{date | date}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'date with short' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{date | date:"short"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'date with medium' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{date | date:"medium"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'date with shortDate' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{date | date:"shortDate"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'date with shortDate' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{date | date:"long"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'date with dd/mm/yyyy' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{date | date:"dd/MM/yyyy"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'date with GMT5' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{date}}</td>
+                        <td>{{date | date:"long":"GMT-5":"es"}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+</div>

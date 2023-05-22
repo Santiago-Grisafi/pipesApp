@@ -1,0 +1,105 @@
+<div class="text-layout text-center mt-3">
+    <h2>Custom Pipes:</h2>
+</div>
+<div class="row mt-2 text-center">
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'capitalize custom pipe' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{text}}</td>
+                        <td>{{text | CapitalizePipe}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'mayus custom pipe' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{text}}</td>
+                        <td>{{text | MayusPipe}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'slice custom pipe' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{text}}</td>
+                        <td>{{text | SlicePipe:3}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-4 col-sm-12 mb-3">
+        <p-card [header]="'cut custom pipe' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{text}}</td>
+                        <td>{{text | CutPipe}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+    <div class="col-lg-6 col-sm-12 mb-3">
+        <p-card [header]="'cut custom pipe' | titlecase">
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>Whiout Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{names}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table dark-table bg-dark text-white">
+                <thead>
+                    <tr>
+                        <th>With Pipe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{names | orderArray}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p-card>
+    </div>
+</div>
